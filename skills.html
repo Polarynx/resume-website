@@ -5,14 +5,24 @@
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Skills — Your Name</title>
   <style>
-    body{font-family:system-ui,Segoe UI,Roboto,Arial;margin:0;background:#f8fafc;color:#0f172a}
-    .container{max-width:800px;margin:0 auto;padding:20px}
+    :root{--accent:#2563eb;--bg:#f8fafc;--text:#0f172a;--muted:#475569}
+    *{box-sizing:border-box}
+    body{font-family:system-ui,-apple-system,Segoe UI,Roboto,"Helvetica Neue",Arial;line-height:1.45;margin:0;color:var(--text);background:var(--bg)}
     header{background:#fff;border-bottom:1px solid #e6eef8}
-    nav{display:flex;gap:10px;padding:14px}
-    nav a{color:#475569;text-decoration:none}
-    section{background:#fff;padding:18px;border-radius:10px;margin-top:20px}
-    ul.skills{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:10px;list-style:none;padding:0;margin:0}
-    ul.skills li{background:#f1f8ff;padding:10px;border-radius:8px}
+    .container{max-width:980px;margin:0 auto;padding:20px}
+    nav{display:flex;gap:12px;flex-wrap:wrap;align-items:center}
+    nav a{color:var(--muted);text-decoration:none;padding:8px 10px;border-radius:6px}
+    nav a:hover{background:#f1f8ff;color:var(--accent)}
+    .hero{display:flex;gap:20px;align-items:center;padding:28px 0}
+    .hero h1{margin:0;font-size:1.6rem}
+    .subtitle{color:var(--muted);margin-top:6px}
+    main{padding:20px 0}
+    section{background:#fff;padding:18px;border-radius:10px;margin-bottom:16px;box-shadow:0 1px 2px rgba(15,23,42,0.04)}
+    footer{color:var(--muted);font-size:0.9rem;padding:28px 0;text-align:center}
+    .grid{display:grid;gap:12px}
+    @media(min-width:720px){ .grid{grid-template-columns:1fr 320px} }
+    .muted{color:var(--muted)}
+    a.cta{background:var(--accent);color:#fff;padding:8px 12px;border-radius:8px;text-decoration:none}
   </style>
 </head>
 <body>
